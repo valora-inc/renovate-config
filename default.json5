@@ -23,6 +23,8 @@
   semanticCommits: "enabled",
   // Dedupe dependencies
   postUpdateOptions: ["yarnDedupeFewer"],
+  // Labels applied to the PR
+  labels: ["renovate", "{{manager}}"],
   // The order of objects in the packageRules array does matter,
   // in the sense that rules declared later (towards the end of the array)
   // overwrite values of an also-matching rule declared earlier.
