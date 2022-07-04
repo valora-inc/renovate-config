@@ -41,7 +41,7 @@
 
     // Leave peerDependencies and engines alone
     {
-      depTypeList: ["peerDependencies", "engines"],
+      matchDepTypes: ["peerDependencies", "engines"],
       enabled: false,
     },
 
@@ -55,13 +55,13 @@
 
     // Group test packages (jest, etc)
     {
-      extends: "packages:test",
+      extends: ["packages:test"],
       groupName: "test packages",
     },
 
     // Group linters (eslint, etc)
     {
-      extends: "packages:linters",
+      extends: ["packages:linters"],
       groupName: "linters",
     },
 
