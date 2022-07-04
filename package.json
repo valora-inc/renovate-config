@@ -1,0 +1,16 @@
+{
+  "name": "@valora-inc/renovate-config",
+  "version": "0.0.1",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "format": "prettier --loglevel error --write .",
+    "format:check": "prettier --check .",
+    "validate": "RENOVATE_CONFIG_FILE=default.json5 renovate-config-validator"
+  },
+  "devDependencies": {
+    "@valora/prettier-config": "^0.0.1",
+    "prettier": "^2.7.1",
+    "renovate": "^32.105.0"
+  }
+}

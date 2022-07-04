@@ -55,12 +55,14 @@
 
     // Group test packages (jest, etc)
     {
-      extends: ["group:test"],
+      extends: "packages:test",
+      groupName: "test packages",
     },
 
     // Group linters (eslint, etc)
     {
-      extends: ["group:linters"],
+      extends: "packages:linters",
+      groupName: "linters",
     },
 
     // Group updates for prettier packages
