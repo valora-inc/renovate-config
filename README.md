@@ -8,7 +8,7 @@ Add the following into your `renovate.json5`:
 
 ```json5
 {
-  extends: ["github>valora-inc/renovate-config:default.json5"],
+  extends: ['github>valora-inc/renovate-config:default.json5'],
 }
 ```
 

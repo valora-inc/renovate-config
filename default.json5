@@ -2,15 +2,15 @@
 // See: https://docs.renovatebot.com/configuration-options/
 // This is a JSON5 (https://json5.org) file which supports comments and unquoted keys.
 {
-  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   // See https://docs.renovatebot.com/presets-config/#configbase
-  extends: ["config:base"],
+  extends: ['config:base'],
   // UTC is already the default, but for clarity we explicitly set it here
-  timezone: "UTC",
+  timezone: 'UTC',
   // Ignore hourly limit from the base preset
-  ignorePresets: [":prHourlyLimit2"],
+  ignorePresets: [':prHourlyLimit2'],
   // Bump version ranges instead of pinning since we use lock files
-  rangeStrategy: "bump",
+  rangeStrategy: 'bump',
   // Set a status check pending for 3 days from release timestamp to guard against unpublishing
   stabilityDays: 3,
   // Disable vulnerability updates for now
@@ -20,79 +20,79 @@
     enabled: false,
   },
   // Use semantic commits
-  semanticCommits: "enabled",
+  semanticCommits: 'enabled',
   // Dedupe dependencies
-  postUpdateOptions: ["yarnDedupeFewer"],
+  postUpdateOptions: ['yarnDedupeFewer'],
   // Labels applied to the PR
-  labels: ["renovate", "{{manager}}"],
+  labels: ['renovate', '{{manager}}'],
   // The order of objects in the packageRules array does matter,
   // in the sense that rules declared later (towards the end of the array)
   // overwrite values of an also-matching rule declared earlier.
   packageRules: [
     // Automerge non-major updates
     {
-      matchUpdateTypes: ["minor", "patch", "pin"],
+      matchUpdateTypes: ['minor', 'patch', 'pin'],
       automerge: true,
       // Only automerge during weekdays when the team is up, and skip Fridays.
       // Since we mostly use automated deploys, we don't want to deal with unexpected downtime
       // when we can't easily fix it.
-      schedule: ["after 7:00 before 23:00 every weekday except on Friday"],
+      schedule: ['after 7:00 before 23:00 every weekday except on Friday'],
     },
 
     // Leave peerDependencies and engines alone
     {
-      matchDepTypes: ["peerDependencies", "engines"],
+      matchDepTypes: ['peerDependencies', 'engines'],
       enabled: false,
     },
 
     // Group devDependencies updates
     {
-      matchDepTypes: ["devDependencies"],
-      groupName: "devDependencies",
+      matchDepTypes: ['devDependencies'],
+      groupName: 'devDependencies',
       // Schedule this once a week since they can have frequent updates
-      extends: ["schedule:earlyMondays"],
+      extends: ['schedule:earlyMondays'],
     },
 
     // Group test packages (jest, etc)
     {
-      extends: ["packages:test"],
-      groupName: "test packages",
+      extends: ['packages:test'],
+      groupName: 'test packages',
     },
 
     // Group linters (eslint, etc)
     {
-      extends: ["packages:linters"],
-      groupName: "linters",
+      extends: ['packages:linters'],
+      groupName: 'linters',
     },
 
     // Group updates for prettier packages
     {
-      matchPackagePatterns: ["^prettier"],
-      groupName: "prettier packages",
+      matchPackagePatterns: ['^prettier'],
+      groupName: 'prettier packages',
     },
 
     // Group typescript packages
     {
-      matchPackagePatterns: ["^typescript"],
-      groupName: "typescript packages",
+      matchPackagePatterns: ['^typescript'],
+      groupName: 'typescript packages',
     },
 
     // Group updates for @testing-library packages
     {
-      matchPackagePatterns: ["^@testing-library/"],
-      groupName: "testing-library packages",
+      matchPackagePatterns: ['^@testing-library/'],
+      groupName: 'testing-library packages',
     },
 
     // Group updates for @segment packages
     {
-      matchPackagePatterns: ["^@segment/"],
-      groupName: "segment packages",
+      matchPackagePatterns: ['^@segment/'],
+      groupName: 'segment packages',
     },
 
     // Group updates for @celo packages
     {
-      matchPackagePatterns: ["^@celo/"],
-      groupName: "celo packages",
+      matchPackagePatterns: ['^@celo/'],
+      groupName: 'celo packages',
     },
   ],
 }

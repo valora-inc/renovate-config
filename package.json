@@ -12,5 +12,6 @@
     "@valora/prettier-config": "^0.0.1",
     "prettier": "^2.7.1",
     "renovate": "^32.105.0"
-  }
+  },
+  "prettier": "@valora/prettier-config"
 }
