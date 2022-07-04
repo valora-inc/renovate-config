@@ -6,7 +6,7 @@
   "scripts": {
     "format": "prettier --loglevel error --write .",
     "format:check": "prettier --check .",
-    "validate": "RENOVATE_CONFIG_FILE=default.json5 renovate-config-validator"
+    "validate": "RENOVATE_CONFIG_FILE=default.json5 LOG_LEVEL=debug renovate-config-validator"
   },
   "devDependencies": {
     "@valora/prettier-config": "^0.0.1",
