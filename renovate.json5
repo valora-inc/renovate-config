@@ -1,0 +1,4 @@
+{
+  // Renovate config for this repo extends our default config
+  extends: ['github>valora-inc/renovate-config:default.json5'],
+}
