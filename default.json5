@@ -100,7 +100,7 @@
       matchPackagePatterns: ['^@fiatconnect/'],
       groupName: 'celo packages',
       // No risk of unpublishing and these are typically pulled in immediately
-      stabilityDays: 0
+      stabilityDays: 0,
     },
   ],
 }
