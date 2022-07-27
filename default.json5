@@ -98,7 +98,7 @@
     // Group updates for @fiatconnect packages
     {
       matchPackagePatterns: ['^@fiatconnect/'],
-      groupName: 'celo packages',
+      groupName: 'fiatconnect packages',
       // No risk of unpublishing and these are typically pulled in immediately
       stabilityDays: 0,
     },
