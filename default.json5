@@ -102,5 +102,12 @@
       // No risk of unpublishing and these are typically pulled in immediately
       stabilityDays: 0,
     },
+
+    // Disable stability days for Renovate since it's automatically published daily
+    // so has no chance to get merged with the value we set earlier
+    {
+      matchPackageNames: ['renovate'],
+      stabilityDays: 0,
+    },
   ],
 }
