@@ -33,6 +33,9 @@
     {
       matchUpdateTypes: ['minor', 'patch', 'pin'],
       automerge: true,
+      // Speed up merging PRs using GitHub automerge feature
+      // See https://docs.renovatebot.com/key-concepts/automerge/#faster-merges-with-platform-native-automerge
+      platformAutomerge: true,
       // Only automerge during weekdays when the team is up, and skip Fridays.
       // Since we mostly use automated deploys, we don't want to deal with unexpected downtime
       // when we can't easily fix it.
