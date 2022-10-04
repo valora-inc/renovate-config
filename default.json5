@@ -13,6 +13,10 @@
   rangeStrategy: 'bump',
   // Set a status check pending for 3 days from release timestamp to guard against unpublishing
   stabilityDays: 3,
+  // Renovate will hold back from creating PRs until the stabilityDays have passed
+  // Since we use platformAutomerge, this is important to prevent directly automerging PRs before the stabilityDays have passed
+  // Note: we can't use the branch protection for this, because we'd need that check only for renovate PRs
+  internalChecksFilter: 'strict',
   // Disable vulnerability updates for now
   // Dependabot is handling them instead because Renovate is not yet able to update transitive dependencies
   // See https://github.com/renovatebot/renovate/issues/3080
