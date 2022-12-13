@@ -52,6 +52,14 @@
       enabled: false,
     },
 
+    // Leave major @types/node updates alone
+    // We only want to update these when we also update the node version
+    {
+      matchUpdateTypes: ['major'],
+      matchPackageNames: ['@types/node'],
+      enabled: false,
+    },
+
     // Group devDependencies updates
     {
       matchDepTypes: ['devDependencies'],
