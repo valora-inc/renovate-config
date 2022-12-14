@@ -13,6 +13,15 @@
   rangeStrategy: 'bump',
   // Set a status check pending for 3 days from release timestamp to guard against unpublishing
   stabilityDays: 3,
+  // Automerge all updates (see packageRules below for exceptions)
+  automerge: true,
+  // Only automerge during weekdays when the team is up, and skip Fridays.
+  // Since we mostly use automated deploys, we don't want to deal with unexpected downtime
+  // when we can't easily fix it.
+  automergeSchedule: ['after 8:00 before 23:00 every weekday except on Friday'],
+  // Speed up merging PRs using GitHub automerge feature
+  // See https://docs.renovatebot.com/key-concepts/automerge/#faster-merges-with-platform-native-automerge
+  platformAutomerge: true,
   // Renovate will hold back from creating PRs until the stabilityDays have passed
   // Since we use platformAutomerge, this is important to prevent directly automerging PRs before the stabilityDays have passed
   // Note: we can't use the branch protection for this, because we'd need that check only for renovate PRs
@@ -33,17 +42,12 @@
   // in the sense that rules declared later (towards the end of the array)
   // overwrite values of an also-matching rule declared earlier.
   packageRules: [
-    // Automerge non-major updates
+    // For now don't automerge major or minor updates for these network libraries,
+    // since one of them broke recently, see https://github.com/axios/axios/issues/5296
     {
-      matchUpdateTypes: ['minor', 'patch', 'pin'],
-      automerge: true,
-      // Speed up merging PRs using GitHub automerge feature
-      // See https://docs.renovatebot.com/key-concepts/automerge/#faster-merges-with-platform-native-automerge
-      platformAutomerge: true,
-      // Only automerge during weekdays when the team is up, and skip Fridays.
-      // Since we mostly use automated deploys, we don't want to deal with unexpected downtime
-      // when we can't easily fix it.
-      schedule: ['after 7:00 before 23:00 every weekday except on Friday'],
+      matchUpdateTypes: ['major', 'minor'],
+      automerge: false,
+      matchPackageNames: ['axios', 'node-fetch'],
     },
 
     // Leave peerDependencies and engines alone

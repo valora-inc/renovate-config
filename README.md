@@ -18,7 +18,7 @@ Add the following into your `renovate.json5`:
 
 Highlights:
 
-- Automerges `minor` and `patch` updates during office hours (across PST and CET timezones), except on Fridays (no deploys on Fridays!!)
+- Automerges all updates during office hours (across PST and CET timezones), except on Fridays (no deploys on Fridays!!). This requires good test coverage and a good CI pipeline.
 - Groups `devDependencies` with weekly automerges (reduces the noise since these tend to update frequently). With some exceptions to more clearly see updates (TypeScript, Prettier, etc).
 - Dedupes lockfile entries
 
