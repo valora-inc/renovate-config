@@ -17,10 +17,10 @@ Add the following into your `renovate.json5`:
 ### Base
 
 The "base" renovate config is a subset of the default config that is intended for repositories where the default options are
-causing problems that cannot be solved with a simple override. An example of this is `postUpdateOptions`, which 
-has caused CI failures in cloud-functions and needed to be omitted. 
+causing problems that cannot be solved with a simple override. An example of this is `postUpdateOptions`, which
+has caused CI failures in cloud-functions and needed to be omitted.
 
-If the default config is not working well for a particular repo, and overriding some configs is not possible, 
+If the default config is not working well for a particular repo, and overriding some configs is not possible,
 then the base config can be used instead as follows:
 
 ```json5
