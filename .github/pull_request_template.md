@@ -1,1 +1,1 @@
-- [ ] I used `default.json5` for configs that are easy to override, and `base.json5` for all others
+- [ ] I used `default.json5` for configs that are easy to override (e.g. [mergeable](https://docs.renovatebot.com/configuration-options/) is false), and `base.json5` for all others
