@@ -128,5 +128,5 @@
       matchPackageNames: ['renovate'],
       stabilityDays: 0,
     },
-  ]
+  ],
 }
