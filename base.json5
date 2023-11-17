@@ -128,5 +128,15 @@
       matchPackageNames: ['renovate'],
       stabilityDays: 0,
     },
+
+    {
+      matchPackagePatterns: [
+        'ethers',
+        '@fiatconnect/fiatconnect-sdk',
+        'siwe',
+        '@valora/express-siwe',
+      ],
+      groupName: 'ethers and packages that depend on it',
+    },
   ],
 }
