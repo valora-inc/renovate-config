@@ -2167,16 +2167,16 @@
   resolved "https://registry.yarnpkg.com/@valora/prettier-config/-/prettier-config-0.0.1.tgz#5c739ce07c4d2d8b320c7b49366efa80ac98a655"
   integrity sha512-wg05yCU8Ext1jr8LEEs7dm2KakYbyg3rPxoD7ASSfGycP7HlkIfMJW6NzLTFko3CmkaFxeeydpFbgVOe36cnig==
 
-"@yarnpkg/core@4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/core/-/core-4.0.5.tgz#0aa09c908d82f1f3a9e9b72aeadfe398603f7ed0"
-  integrity sha512-6ib9l8P30GxHvxZo3170hr5PCy2qQnI4N4lXwNJxJnV0i46UlgLA4hlGp/kFVttteATGeckfduIDyWZgjn9sPw==
+"@yarnpkg/core@4.1.0":
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/core/-/core-4.1.0.tgz#e0f41a0c0cd7c152fea5341c0c98d68df6187f88"
+  integrity sha512-8O+afZvv6qDK2TfwBat2uHw49DwpLk0KzL+wY/C5dlEqUxLXClYs1zNmQo2lj4g7JuZmCPxYGblzjacizWYLTg==
   dependencies:
     "@arcanis/slice-ansi" "^1.1.1"
     "@types/semver" "^7.1.0"
     "@types/treeify" "^1.0.0"
-    "@yarnpkg/fslib" "^3.0.2"
-    "@yarnpkg/libzip" "^3.0.1"
+    "@yarnpkg/fslib" "^3.1.0"
+    "@yarnpkg/libzip" "^3.1.0"
     "@yarnpkg/parsers" "^3.0.2"
     "@yarnpkg/shell" "^4.0.2"
     camelcase "^5.3.1"
@@ -2199,20 +2199,20 @@
     tslib "^2.4.0"
     tunnel "^0.0.6"
 
-"@yarnpkg/fslib@^3.0.2":
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-3.0.2.tgz#a1fdcbb16c1986a9a9c037d2bbe82f3fcb3bb674"
-  integrity sha512-dqSpZCj9ZeqMZzITHvpi5qKS9MCLWZYCl6NHCSl3a+BqiyLApehWAy60zjv9F1fxKZ6RKDgHLhBWhx8RwPm6Dw==
+"@yarnpkg/fslib@^3.0.2", "@yarnpkg/fslib@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/fslib/-/fslib-3.1.0.tgz#e5bda3397b5f070eb65751643f75645307eaa483"
+  integrity sha512-wsj7/sUVSdXOIX/qwaON/Ky5GsP5gs9ry9DKwgLbWT7k3qw4/EcHAtfTtPhBYu33UibzBFI+fgB4wBRVH2XVaw==
   dependencies:
     tslib "^2.4.0"
 
-"@yarnpkg/libzip@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@yarnpkg/libzip/-/libzip-3.0.1.tgz#a1a08141a485ce9d93addae535974ac429c64474"
-  integrity sha512-fiqRLk2fyd2r34/Qc7HlP8fKIo1CK5CZpLNObJwnbFmZQN2hVanovFlG++3oH3qYJymEmjPl5EGsygcEJZl4Pg==
+"@yarnpkg/libzip@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@yarnpkg/libzip/-/libzip-3.1.0.tgz#c33e91bd8bfcc5a5b4cb05b387c04c9ba9fb88b0"
+  integrity sha512-x66/F8wEOUL8Hi4NZFVVKCFNITN0keQt0ZNlY5V9dRb+judyO8aJv4hazO3WyblnGhClvuBPbx+a2X4LNS5ziA==
   dependencies:
     "@types/emscripten" "^1.39.6"
-    "@yarnpkg/fslib" "^3.0.2"
+    "@yarnpkg/fslib" "^3.1.0"
     tslib "^2.4.0"
 
 "@yarnpkg/parsers@3.0.2", "@yarnpkg/parsers@^3.0.2":
@@ -2807,10 +2807,10 @@ data-view-byte-offset@^1.0.0:
     es-errors "^1.3.0"
     is-data-view "^1.0.1"
 
-debug@4, debug@^4.0.0, debug@^4.1.1, debug@^4.3.4:
-  version "4.3.4"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.4.tgz#1319f6579357f2338d3337d2cdd4914bb5dcc865"
-  integrity sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==
+debug@4, debug@^4.0.0, debug@^4.1.1, debug@^4.3.4, debug@^4.3.5:
+  version "4.3.5"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.5.tgz#e83444eceb9fedd4a1da56d671ae2446a01a6e1e"
+  integrity sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==
   dependencies:
     ms "2.1.2"
 
@@ -3494,10 +3494,10 @@ good-enough-parser@1.1.23:
     klona "2.0.6"
     moo "0.5.2"
 
-google-auth-library@9.10.0:
-  version "9.10.0"
-  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-9.10.0.tgz#c9fb940923f7ff2569d61982ee1748578c0bbfd4"
-  integrity sha512-ol+oSa5NbcGdDqA+gZ3G3mev59OHBZksBTxY/tYwjtcp1H/scAFwJfSQU9/1RALoyZ7FslNbke8j4i3ipwlyuQ==
+google-auth-library@9.11.0:
+  version "9.11.0"
+  resolved "https://registry.yarnpkg.com/google-auth-library/-/google-auth-library-9.11.0.tgz#bd6da364bcde4e0cc4ed70a0e0df5112b6a671dd"
+  integrity sha512-epX3ww/mNnhl6tL45EQ/oixsY8JLEgUFoT4A5E/5iAR4esld9Kqv6IJGk7EmGuOgDvaarwF95hU2+v7Irql9lw==
   dependencies:
     base64-js "^1.3.0"
     ecdsa-sig-formatter "^1.0.11"
@@ -4603,10 +4603,10 @@ mv@~2:
     ncp "~2.0.0"
     rimraf "~2.4.0"
 
-nan@^2.14.0, nan@^2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/nan/-/nan-2.19.0.tgz#bb58122ad55a6c5bc973303908d5b16cfdd5a8c0"
-  integrity sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==
+nan@^2.14.0, nan@^2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.20.0.tgz#08c5ea813dd54ed16e5bd6505bf42af4f7838ca3"
+  integrity sha512-bk3gXBZDGILuuo/6sKtr0DQmSThYHLtNCdSdXk9YkxD/jK6X2vmCyyXBBxyqZ4XcnzTyYEAThfX3DCEnLf6igw==
 
 nanoid@3.3.7:
   version "3.3.7"
@@ -4953,12 +4953,7 @@ prebuild-install@^7.1.1:
     tar-fs "^2.0.0"
     tunnel-agent "^0.6.0"
 
-prettier@3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.1.tgz#e68935518dd90bb7ec4821ba970e68f8de16e1ac"
-  integrity sha512-7CAwy5dRsxs8PHXT3twixW9/OEll8MLE0VRPCJyl7CkS6VHGPSlsVaWTiASPTyGyYRyApxlaWTzwUxVNrhcwDg==
-
-prettier@^3.3.2:
+prettier@3.3.2, prettier@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-3.3.2.tgz#03ff86dc7c835f2d2559ee76876a3914cec4a90a"
   integrity sha512-rAVeHYMcv8ATV5d508CFdn+8/pHPpXeIid1DdrPwXnaAdH7cqjVbpJaT5eq4yRAFU/lsbwYwSF/n5iNrdJHPQA==
@@ -5059,13 +5054,13 @@ rc@^1.2.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-re2@1.20.12:
-  version "1.20.12"
-  resolved "https://registry.yarnpkg.com/re2/-/re2-1.20.12.tgz#9bb14aa04bba7f051194d12fbb89366531362014"
-  integrity sha512-pfCHx+j0agxahWorhQZ2hyaZh/LH2e/vpoAilggksI3fFt+62oF0AY7UP7uvmpWleYLy6UoBTz4r/Kif0LfB/g==
+re2@1.21.3:
+  version "1.21.3"
+  resolved "https://registry.yarnpkg.com/re2/-/re2-1.21.3.tgz#4bced725a837cbe73d7d42b702a0d46671e6d00a"
+  integrity sha512-GI+KoGkHT4kxTaX+9p0FgNB1XUnCndO9slG5qqeEoZ7kbf6Dk6ohQVpmwKVeSp7LPLn+g6Q3BaCopz4oHuBDuQ==
   dependencies:
     install-artifact-from-github "^1.3.5"
-    nan "^2.19.0"
+    nan "^2.20.0"
     node-gyp "^10.1.0"
 
 read-pkg-up@^7.0.1:
@@ -5184,10 +5179,10 @@ remark@13.0.0:
     remark-stringify "^9.0.0"
     unified "^9.1.0"
 
-renovate@^37.409.1:
-  version "37.409.1"
-  resolved "https://registry.yarnpkg.com/renovate/-/renovate-37.409.1.tgz#c63513204dd73b2c2699ac2d81247a6f37a50c37"
-  integrity sha512-kJ7CpRq8+GRXi5yW790olPZEaYr7GYEgvwlKuETYTvbKO1cGIx/PO2k9A5lNTHrzoDdPZPdqqT4tQGW03CWEZw==
+renovate@^37.414.1:
+  version "37.414.1"
+  resolved "https://registry.yarnpkg.com/renovate/-/renovate-37.414.1.tgz#f95ddde4253e54488ccc18e6098f5a5c008bf4e8"
+  integrity sha512-qaMUaNnu9mHqy4HcQ4/mLdZNRiR9Q3JiZDaeuoKh/DC+Bqm67t3q2pht18bBBiiib6GBZZGSdhtbkIavLrmWqw==
   dependencies:
     "@aws-sdk/client-codecommit" "3.588.0"
     "@aws-sdk/client-ec2" "3.588.0"
@@ -5213,7 +5208,7 @@ renovate@^37.409.1:
     "@renovatebot/pep440" "3.0.20"
     "@renovatebot/ruby-semver" "3.0.23"
     "@sindresorhus/is" "4.6.0"
-    "@yarnpkg/core" "4.0.5"
+    "@yarnpkg/core" "4.1.0"
     "@yarnpkg/parsers" "3.0.2"
     agentkeepalive "4.5.0"
     aggregate-error "3.1.0"
@@ -5247,7 +5242,7 @@ renovate@^37.409.1:
     glob "10.4.1"
     global-agent "3.0.0"
     good-enough-parser "1.1.23"
-    google-auth-library "9.10.0"
+    google-auth-library "9.11.0"
     got "11.8.6"
     graph-data-structure "3.5.0"
     handlebars "4.7.8"
@@ -5274,7 +5269,7 @@ renovate@^37.409.1:
     p-queue "6.6.2"
     p-throttle "4.1.1"
     parse-link-header "2.0.0"
-    prettier "3.3.1"
+    prettier "3.3.2"
     redis "4.6.14"
     remark "13.0.0"
     remark-github "10.1.0"
@@ -5283,7 +5278,7 @@ renovate@^37.409.1:
     semver-stable "3.0.0"
     semver-utils "1.1.4"
     shlex "2.1.2"
-    simple-git "3.24.0"
+    simple-git "3.25.0"
     slugify "1.6.6"
     source-map-support "0.5.21"
     toml-eslint-parser "0.9.3"
@@ -5298,7 +5293,7 @@ renovate@^37.409.1:
   optionalDependencies:
     better-sqlite3 "9.6.0"
     openpgp "5.11.1"
-    re2 "1.20.12"
+    re2 "1.21.3"
 
 repeat-string@^1.0.0:
   version "1.6.1"
@@ -5531,14 +5526,14 @@ simple-get@^4.0.0:
     once "^1.3.1"
     simple-concat "^1.0.0"
 
-simple-git@3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.24.0.tgz#33a8c88dc6fa74e53eaf3d6bfc27d0182a49ec00"
-  integrity sha512-QqAKee9Twv+3k8IFOFfPB2hnk6as6Y6ACUpwCtQvRYBAes23Wv3SZlHVobAzqcE8gfsisCvPw3HGW3HYM+VYYw==
+simple-git@3.25.0:
+  version "3.25.0"
+  resolved "https://registry.yarnpkg.com/simple-git/-/simple-git-3.25.0.tgz#3666e76d6831f0583dc380645945b97e0ac4aab6"
+  integrity sha512-KIY5sBnzc4yEcJXW7Tdv4viEz8KyG+nU0hay+DWZasvdFOYKeUZ6Xc25LUHHjw0tinPT7O1eY6pzX7pRT1K8rw==
   dependencies:
     "@kwsites/file-exists" "^1.1.1"
     "@kwsites/promise-deferred" "^1.1.1"
-    debug "^4.3.4"
+    debug "^4.3.5"
 
 slugify@1.6.6:
   version "1.6.6"
