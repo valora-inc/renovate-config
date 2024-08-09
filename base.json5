@@ -6,9 +6,9 @@
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   // See https://docs.renovatebot.com/presets-config/#configbase
   extends: ['config:base'],
-  // Avoid "fix" semantic commit type
-  // See https://docs.renovatebot.com/presets-default/#semanticprefixfixdepschoreothers
-  // https://github.com/renovatebot/renovate/discussions/14026
+  // Restrict semantic commit type to "chore" (avoid "fix")
+  // See: https://docs.renovatebot.com/presets-default/#semanticprefixfixdepschoreothers
+  //      https://github.com/renovatebot/renovate/discussions/14026
   ignorePresets: [':semanticPrefixFixDepsChoreOthers']
   // UTC is already the default, but for clarity we explicitly set it here
   timezone: 'UTC',
