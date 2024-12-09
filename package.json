@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@valora/prettier-config": "^0.0.1",
-    "prettier": "^3.4.1",
+    "prettier": "^3.4.2",
     "renovate": "^37.440.7"
   },
   "prettier": "@valora/prettier-config"
