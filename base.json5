@@ -124,7 +124,7 @@
     // Disable stability days for some packages, where we don't expect unpublishing
     // so they are pulled in immediately
     {
-      matchPackagePatterns: ['^@valora/'],
+      matchPackagePatterns: ['^@valora/', '^@divvi/'],
       matchPackageNames: ['renovate'],
       stabilityDays: 0,
     },
