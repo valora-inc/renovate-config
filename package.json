@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "license": "Apache-2.0",
   "private": true,
+  "engines": {
+    "node": "^20"
+  },
   "scripts": {
     "format": "prettier --loglevel error --write .",
     "format:check": "prettier --check .",
