@@ -5,7 +5,11 @@
 {
   $schema: 'https://docs.renovatebot.com/renovate-schema.json',
   // See https://docs.renovatebot.com/presets-config/#configbase
-  extends: ['config:base'],
+  extends: [
+    'config:base',
+    // See https://docs.renovatebot.com/presets-helpers/#helperspingithubactiondigeststosemver
+    'helpers:pinGitHubActionDigestsToSemver',
+  ],
   // UTC is already the default, but for clarity we explicitly set it here
   timezone: 'UTC',
   // Ignore hourly limit from the base preset
